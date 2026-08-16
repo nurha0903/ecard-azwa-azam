@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ms">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="theme-color"
+        content="#781317"
+    >   
+
+    <title>Azwa & Azam | 21 November 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="ecard">
+
+        <!-- ====================== -->
+        <!-- COVER -->
+        <!-- ====================== -->
+
+        <section class="page cover-page" id="cover">
+
+            <img
+                src="images/cover.png"
+                alt="Azwa dan Azam"
+                class="ecard-image"
+            >
+
+            <button
+                class="open-button"
+                id="openInvitation"
+            >
+                BUKA UNDANGAN
+            </button>
+
+        </section>
+
+
+        <!-- ====================== -->
+        <!-- MAKLUMAT MAJLIS -->
+        <!-- ====================== -->
+
+        <section
+            class="page invitation-page"
+            id="invitation"
+        >
+
+            <img
+                src="images/invitation.png"
+                alt="Maklumat Majlis Perkahwinan Azwa dan Azam"
+                class="ecard-image"
+            >
+
+        </section>
+
+    </main>
+
+    <section class="location-section">
+
+    <h2>Lokasi Majlis</h2>
+
+    <p>
+        Orked Event & Space,<br>
+        No 89-G, Jalan Cattleya 9,<br>
+        70450 Seremban
+    </p>
+
+    <div class="location-buttons">
+
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=Orked+Event+%26+Space+Seremban"
+            target="_blank"
+            class="location-btn"
+        >
+            GOOGLE MAPS
+        </a>
+
+        <a
+            href="https://waze.com/ul?q=Orked%20Event%20%26%20Space%20Seremban"
+            target="_blank"
+            class="location-btn"
+        >
+            WAZE
+        </a>
+
+    </div>
+
+</section>
+
+<!-- COUNTDOWN -->
+        <section class="countdown-section">
+
+            <p class="section-small-title">
+                MENGHITUNG HARI
+            </p>
+
+            <h2>Menuju Hari Bahagia</h2>
+
+            <div class="countdown" id="countdown">
+
+                <div class="countdown-box">
+                    <span id="days">00</span>
+                    <small>HARI</small>
+                </div>
+
+                <div class="countdown-box">
+                    <span id="hours">00</span>
+                    <small>JAM</small>
+                </div>
+
+                <div class="countdown-box">
+                    <span id="minutes">00</span>
+                    <small>MINIT</small>
+                </div>
+
+                <div class="countdown-box">
+                    <span id="seconds">00</span>
+                    <small>SAAT</small>
+                </div>
+
+            </div>
+
+            <p
+                class="countdown-message"
+                id="countdownMessage"
+            ></p>
+
+        </section>
+
+
+<!-- ====================== -->
+<!-- UCAPAN & DOA -->
+<!-- ====================== -->
+
+<section class="wishes-section" id="wishes">
+
+    <div class="wishes-header">
+
+        <p class="small-title">
+            TITIPKAN
+        </p>
+
+        <h2>Ucapan & Doa</h2>
+
+        <p class="wishes-intro">
+            Tinggalkan ucapan dan doa buat
+            Azwa & Azam ♡
+        </p>
+
+    </div>
+
+
+    <!-- FORM UCAPAN -->
+
+    <form
+        class="wish-form"
+        id="wishForm"
+    >
+
+        <div class="form-group">
+
+            <label for="guestName">
+                Nama
+            </label>
+
+            <input
+                type="text"
+                id="guestName"
+                placeholder="Nama anda"
+                maxlength="50"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="guestWish">
+                Ucapan / Doa
+            </label>
+
+            <textarea
+                id="guestWish"
+                placeholder="Tuliskan ucapan dan doa anda..."
+                maxlength="300"
+                rows="5"
+                required
+            ></textarea>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="send-wish-button"
+        >
+            HANTAR UCAPAN ♡
+        </button>
+
+
+        <p
+            class="wish-success"
+            id="wishSuccess"
+        >
+        </p>
+
+    </form>
+
+
+    <!-- SENARAI UCAPAN -->
+
+    <div class="wish-list-wrapper">
+
+        <h3>Ucapan Tetamu</h3>
+
+        <div
+            class="wish-list"
+            id="wishList"
+        >
+
+            <!-- Wish akan masuk sini -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- HUBUNGI -->
+        <section class="contact-section">
+
+            <p class="section-small-title">
+                PERTANYAAN
+            </p>
+
+            <h2>Hubungi Kami</h2>
+
+            <p class="contact-intro">
+                Sebarang pertanyaan berkaitan majlis,
+                boleh hubungi:
+            </p>
+
+            <div class="contact-buttons">
+
+                <a
+                    href="https://wa.me/60172479039?text=Assalamualaikum,%20saya%20ingin%20bertanya%20mengenai%20majlis%20perkahwinan%20Azwa%20%26%20Azam."
+                    target="_blank"
+                    class="contact-card"
+                >
+                    <span>ABANG</span>
+                    <strong>017-2479039</strong>
+                    <small>WHATSAPP</small>
+                </a>
+
+
+                <a
+                    href="https://wa.me/60185736625?text=Assalamualaikum,%20saya%20ingin%20bertanya%20mengenai%20majlis%20perkahwinan%20Azwa%20%26%20Azam."
+                    target="_blank"
+                    class="contact-card"
+                >
+                    <span>KAKAK</span>
+                    <strong>018-5736625</strong>
+                    <small>WHATSAPP</small>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- PENUTUP -->
+        <section class="closing-section">
+
+            <p class="closing-small">
+                TERIMA KASIH
+            </p>
+
+            <h2>Azwa & Azam</h2>
+
+            <div class="closing-divider">
+                ♡
+            </div>
+
+            <p>
+                Kehadiran dan doa restu anda
+                amat bermakna buat kami.
+            </p>
+
+            <p class="closing-date">
+                21 • 11 • 2026
+            </p>
+
+        </section>
+
+
+        <footer class="footer">
+
+            <p>
+                Azwa & Azam • 2026
+            </p>
+
+        </footer>
+
+
+    </div>
+
+</main>
+
+
+    <!-- BACKGROUND MUSIC -->
+
+    <audio
+        id="backgroundMusic"
+        loop
+    >
+
+        <source
+            src="audio/wedding-song.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+ 
+    <script src="script.js"></script>
+
+</body>
+
+</html>
