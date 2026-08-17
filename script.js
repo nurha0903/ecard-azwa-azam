@@ -25,6 +25,9 @@ const mainContent =
 const openButton =
     document.getElementById("openInvitation");
 
+const cover =
+    document.getElementById("cover");
+
 const invitation =
     document.getElementById("invitation");
 
@@ -85,6 +88,25 @@ const wishSuccess =
 openButton.addEventListener(
     "click",
     function () {
+        // Paparkan semua kandungan e-card
+mainContent.hidden = false;
+
+// Bagi page kedua muncul
+setTimeout(function () {
+    mainContent.classList.add("show");
+}, 50);
+
+// Fade keluar cover
+cover.classList.add("cover-open");
+
+// Benarkan scroll
+document.body.classList.remove("locked");
+
+// Buang cover selepas animation
+setTimeout(function () {
+    cover.style.display = "none";
+    window.scrollTo(0, 0);
+}, 1200);
 
         // Hilangkan button Buka Undangan
         openButton.style.display = "none";
@@ -495,3 +517,57 @@ wishForm.addEventListener(
 // ========================================
 
 loadWishes();
+
+/* ========================================
+   FINAL SCROLL REVEAL
+======================================== */
+
+const revealSections =
+    document.querySelectorAll(
+        ".location-section, " +
+        ".countdown-section, " +
+        ".wishes-section, " +
+        ".contact-section, " +
+        ".closing-section"
+    );
+
+
+revealSections.forEach(function (section) {
+
+    section.classList.add("reveal-section");
+
+});
+
+
+const revealObserver =
+    new IntersectionObserver(
+        function (entries) {
+
+            entries.forEach(function (entry) {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add(
+                        "revealed"
+                    );
+
+                    revealObserver.unobserve(
+                        entry.target
+                    );
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.12
+        }
+    );
+
+
+revealSections.forEach(function (section) {
+
+    revealObserver.observe(section);
+
+});
