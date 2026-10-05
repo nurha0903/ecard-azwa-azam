@@ -2396,3 +2396,91 @@ textarea:focus-visible {
     }
 
 }
+
+/* FLOWER ANIMATION */
+
+.cover-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+
+.flower {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+}
+
+
+.flower-left {
+    width: 38%;
+    top: 2%;
+    left: 0;
+    transform-origin: top center;
+    animation: swayLeft 6s ease-in-out infinite;
+}
+
+
+.flower-right {
+    width: 38%;
+    top: 2%;
+    right: 0;
+    transform-origin: top center;
+    animation: swayRight 7s ease-in-out infinite;
+}
+
+
+.flower-bottom-left {
+    width: 45%;
+    bottom: 0;
+    left: 0;
+    animation: floatFlower 5s ease-in-out infinite;
+}
+
+
+.flower-bottom-right {
+    width: 45%;
+    bottom: 0;
+    right: 0;
+    animation: floatFlower 6s ease-in-out infinite;
+}
+
+
+
+@keyframes swayLeft {
+
+    0%,100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+}
+
+
+@keyframes swayRight {
+
+    0%,100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+}
+
+
+@keyframes floatFlower {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
