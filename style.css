@@ -1063,10 +1063,10 @@ body {
    OPEN INVITATION
 ======================================== */
 
-body.locked {
-    overflow: hidden;
+body {
+    overflow-x:hidden;
+    overflow-y:auto;
 }
-
 
 /* COVER DEPAN */
 
@@ -2409,43 +2409,34 @@ textarea:focus-visible {
     position: absolute;
     pointer-events: none;
     z-index: 2;
-}
-
-
 .flower-left {
-    width: 38%;
-    top: 2%;
-    left: 0;
-    transform-origin: top center;
-    animation: swayLeft 6s ease-in-out infinite;
+    width:55%;
+    top:0;
+    left:-5%;
+    transform-origin:top left;
 }
 
 
 .flower-right {
-    width: 38%;
-    top: 2%;
-    right: 0;
-    transform-origin: top center;
-    animation: swayRight 7s ease-in-out infinite;
+    width:55%;
+    top:0;
+    right:-5%;
+    transform-origin:top right;
 }
 
 
 .flower-bottom-left {
-    width: 45%;
-    bottom: 0;
-    left: 0;
-    animation: floatFlower 5s ease-in-out infinite;
+    width:65%;
+    bottom:-2%;
+    left:-8%;
 }
 
 
 .flower-bottom-right {
-    width: 45%;
-    bottom: 0;
-    right: 0;
-    animation: floatFlower 6s ease-in-out infinite;
+    width:65%;
+    bottom:-2%;
+    right:-8%;
 }
-
-
 
 @keyframes swayLeft {
 
